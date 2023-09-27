@@ -6,137 +6,177 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-}
+    body,
+    html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+    }
 
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("me.jpg");
-  min-height: 75%;
-}
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("me.jpg");
+        min-height: 75%;
+    }
 
-.menu {
-  display: none;
-}
+    .menu {
+        display: none;
+    }
 
-.aligncenter{
-    text-align: center;
-}
+    .aligncenter {
+        text-align: center;
+    }
 </style>
+
 <body>
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#publications" class="w3-button w3-block w3-black">CV AND PUBLICATIONS</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#research" class="w3-button w3-block w3-black">RESEARCH</a>
+            </div>
+        </div>
     </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Biomedical and Physical Sciences <br> 567 Wilson Rd., Room 3246 <br> East Lansing,
+                48823 MI</span>
+        </div>
+        <div class="w3-display-right w3-center">
+            <span class="w3-text-white" style="font-size:90px">Joshua V. <br>Shields</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-tag">Astrophysics Graduate Student<br>shield90 [at] msu [dot] edu</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+                <p>I am currently a fifth year graduate student at <a href="https://www.msu.edu">Michigan State
+                        University</a> in the department of <a href="https://www.pa.msu.edu">Physics and Astronomy.</a>
+                </p>
+
+                <p>I work with <a href="https://wkerzendorf.github.io/#main">Professor Wolfgang Kerzendorf</a> and the
+                    <a href="https://kerzendorf-group.github.io/">Kerzendorf Group</a> modeling stars and searching for
+                    surviving companions of type Ia supernovae to learn about their progenitor systems and test
+                    different progenitor theories. I use statistical methods capitalizing on the revolutionary new GAIA
+                    mission as well as archival Hubble data to investigate the stellar populations in supernova
+                    remnants. I work at the intersection of observation and theory, making detailed models of stellar
+                    atmospheres to simulate escaping stellar light and then fitting those models to observations to
+                    learn about the structure and composition of stars. <br>
+
+                    I work on and help maintain the open-source <a href="https://github.com/tardis-sn/stardis">Stardis
+                        code</a>, which solves the radiative transfer equation in the outer layers of a star to simulate
+                    light passing through it.
+                    <br>
+
+                    I also help run Michigan State's astrophysics journal club, <a
+                        href="https://jvshields.github.io/coffeepapers/">Astro Coffee!</a> We meet twice a week to
+                    discuss new papers posted on Arxiv and recent developments in astrophysics. We have hybrid in
+                    person/virtual meetings that are welcome to anybody that would like to join. <br>
+                    In my free time I like to play racquetball, ride my bike, longboard, snowboard. I also love all
+                    sorts of games, from board games, to videogames, to card games.
+
+                </p>
+
+            </div>
+            <p class="aligncenter">
+                <img src="sn1006c.jpg" style="width:90%;max-width:600px;margin-top:32px;" class="center">
+            </p>
+            <p class="aligncenter">
+                This is the SN 1006 supernova remnant - a Type Ia remnant that lies only about 2 Kiloparsecs
+                away. <br>
+                It's where I've done my first systematic search for a surviving Type Ia companion that you can read more
+                about below!
+            </p>
+        </div>
     </div>
-    <div class="w3-col s3">
-      <a href="#publications" class="w3-button w3-block w3-black">CV AND PUBLICATIONS</a>
+    <p></p>
+    <!-- Menu Container -->
+    <div class="w3-container" id="publications">
+        <div class="w3-content" style="max-width:700px">
+
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CV AND PUBLICATIONS</span></h5>
+
+            <div class="w3-row w3-center w3-card w3-padding">
+
+                <p><a href="CV.pdf">My CV</a> <br> <a href="https://orcid.org/0000-0002-1560-5286">Click here for a link
+                        to my ORCID!</a> <br></p>
+
+                <img src="kepler.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="research" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RESEARCH</span></h5>
+                <p>I've also done work analyzing data from the <a
+                        href="https://www.eso.org/sci/facilities/develop/instruments/muse.html">MUSE IFU</a> instrument
+                    on the Very Large Telescope on four confirmed Type Ia remnants in the Large Magellanic Cloud. The
+                    LMC is offers a unique laboratory to search for the surviving companions of Type Ia Supernovae,
+                    because unlike our Galaxy, the entire remnants are free from obscuring foreground dust. I'm working
+                    on a pipeline to systematically extract the spectra of the hundreds to thousands of stars in each
+                    remnant, then compare each spectra to stellar models to get an understanding of each star. Once
+                    that's done, I'll be able to look for weird, outstanding objects that could be long-sought surviving
+                    companions of our Type Ias!
+                    <br>
+                    I recently completed a project investigating the stellar population in the SN1006 remnant, using
+                    multi-year baseline astrometry to recover the proper motions of faint stars, in order to test one of
+                    the most promising recent Type Ia progenitor scenarios. Read that paper <a
+                        href="https://ui.adsabs.harvard.edu/abs/2022ApJ...933L..31S/abstract">here!</a> <br> In the past
+                    I have worked on the <a href="https://www.astronomy.ohio-state.edu/asassn/">ASAS-SN</a> team to
+                    discover new supernovae in low redshift galaxies.
+                </p>
+                <!--    <img src="/w3images/map.jpg" class="w3-image" style="width:100%"> -->
+
+            </div>
+        </div>
+
+        <!-- End page content -->
     </div>
-    <div class="w3-col s3">
-      <a href="#research" class="w3-button w3-block w3-black">RESEARCH</a>
-    </div>
-  </div>
-</div>
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Biomedical and Physical Sciences <br> 567 Wilson Rd., Room 3246 <br> East Lansing, 48823 MI</span>
-  </div>
-  <div class="w3-display-right w3-center">
-    <span class="w3-text-white" style="font-size:90px">Joshua V. <br>Shields</span>
-  </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-tag">Astrophysics Graduate Student<br>shield90 [at] msu [dot] edu</span>
-  </div>
-</header>
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+    </footer>
 
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
-
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
-    <p>I am currently a fourth year graduate student at <a href="https://www.msu.edu">Michigan State University</a> in the department of <a href="https://www.pa.msu.edu">Physics and Astronomy.</a> </p>
-
-    <p>I work with <a href="https://wkerzendorf.github.io/#main">Professor Wolfgang Kerzendorf</a> searching for surviving companions of type Ia supernovae to learn about their progenitor systems and test different progenitor theories. I use statistical methods capitalizing on the revolutionary new GAIA mission as well as archival Hubble data to investigate the stellar populations in supernova remnants.<br>
-
-      I also help run Michigan State's astrophysics journal club, <a href="https://jvshields.github.io/coffeepapers/">Astro Coffee!</a> We meet twice a week to discuss new papers posted on Arxiv and recent developments in astrophysics. We have hybrid in person/virtual meetings that are welcome to anybody that would like to join. <br>
-     In my free time I like to play racquetball, ride my bike, longboard, snowboard. I also love all sorts of games, from board games, to videogames, to card games. 
-								
-    </p>
-    
-  </div>
-  <p class="aligncenter">
-    <img src="sn1006c.jpg" style="width:90%;max-width:600px;margin-top:32px;" class="center">
-  </p>
-  <p class="aligncenter">
-    This is the SN 1006 supernova remnant - a confirmed Type Ia remnant that lies only about 2 Kiloparsecs away. <br>
-    It's where I've done my first systematic search for a surviving Type Ia companion that you can read more about below!
-    </p>
-  </div>
-</div>
-<p></p> 
-<!-- Menu Container -->
-<div class="w3-container" id="publications">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CV AND PUBLICATIONS</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-
-      <p><a href="CV.pdf">My CV</a> <br> <a href="https://orcid.org/0000-0002-1560-5286">Click here for a link to my ORCID!</a> <br></p>
-      
-    <img src="kepler.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-  </div>
-</div>
-
-<!-- Contact/Area Container -->
-<div class="w3-container" id="research" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RESEARCH</span></h5>
-    <p>I'm currently analyzing data from the <a href="https://www.eso.org/sci/facilities/develop/instruments/muse.html">MUSE IFU</a> instrument on the Very Large Telescope on four confirmed Type Ia remnants in the Large Magellanic Cloud. The LMC is offers a unique laboratory to search for the surviving companions of Type Ia Supernovae, because unlike our Galaxy, the entire remnants are free from obscuring foreground dust. I'm working on a pipeline to systematically extract the spectra of the hundreds to thousands of stars in each remnant, then compare each spectra to stellar models to get an understanding of each star. Once that's done, I'll be able to look for weird, outstanding objects that could be long-sought surviving companions of our Type Ias! 
-<br>
-      I recently completed a project investigating the stellar population in the SN1006 remnant, using multi-year baseline astrometry to recover the proper motions of faint stars, in order to test one of the most promising recent Type Ia progenitor scenarios. Read that paper <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...933L..31S/abstract">here!</a> <br> In the past I have worked on the <a href = "https://www.astronomy.ohio-state.edu/asassn/">ASAS-SN</a> team to discover new supernovae in low redshift galaxies.</p>
-<!--    <img src="/w3images/map.jpg" class="w3-image" style="width:100%"> -->
-    
-  </div>
-</div>
-
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
 
 </body>
+
 </html>
